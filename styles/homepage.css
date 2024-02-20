@@ -262,3 +262,48 @@ box-shadow:  9px 9px 25px #b5b5b5,
     height: 64px;
     border-radius: 0;
 }
+
+
+/* <----------------------------------------------------------> */
+.preferences{
+    position: relative;
+    
+}
+.preferences .travellers{
+    box-sizing: border-box;
+    height: 64px;
+    width: 200px;
+    font-size: 20px;
+    margin-left: 5px;
+    border: none;
+    cursor: pointer;
+}
+.preferences .options{
+    
+    background-color: white;
+    position: absolute;
+    display: flex;
+    height: 200px;
+    width: 500px;
+    left: -100px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.preferences .options .age .sub{
+    font-size: 12px;
+}
+.preferences .options .opt{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.preferences .options .number button{
+    padding: 5px 8px;
+    text-align: center;
+    color: white;
+    margin: 0px 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0077b6;
+}
