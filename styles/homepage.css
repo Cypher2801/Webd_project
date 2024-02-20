@@ -1,0 +1,264 @@
+*{
+    font-family:"Fredoka";
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 100vw;
+    height: 200vh;
+}
+header{
+    width: 100%;
+   
+
+}
+.logo{
+    height: 100%;
+    width: 20%;
+    background-color: blue;
+}
+header .top_part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.top_part .right-header{
+    position: absolute;
+    right: 30px;
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.top_part .right-header .customer-care img{
+    height:20px;
+    width: 20px;
+    
+    margin-right: 5px;
+}
+.offers,
+.customer-care{
+    color:rgb(78, 81, 91);
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 23px;
+    display: flex;
+    align-items: center;
+}
+.offers:hover i{
+    color: black;
+}
+.customer-care:hover{
+    color: black;
+}
+.login{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.login i{
+    background-color: rgb(217,235,255);
+    padding: 10px;
+    color: blue;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    font-weight: 100;
+}
+
+/* <-------------------------------------------------------> */
+/* <-------------------------------------------------------> */
+
+.options{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}   
+.options .option{
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+    margin-left: 40px;
+    position: relative;
+    cursor: pointer;
+}
+.option::after{
+    content: "";
+    height: 5px;
+    width: 0px;
+    position: absolute;
+    bottom: 0;
+    background-color: blue;
+    border-radius: 5px;
+}
+.flights::after{
+    content: "";
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: blue;
+    border-radius: 5px;
+}
+.options .option:hover::after{
+    animation: myAnimation 1.5s ease-in-out 0.5s 1 normal backwards;
+}
+.options img{
+    height: 60px;
+    width: 60px;
+    object-fit:cover;
+    mix-blend-mode:color-burn;
+    background-color: rgb(255,226,205);
+}
+
+@keyframes myAnimation {
+    0%{
+        left: 0;
+        width: 0;
+    }
+    50%{    
+        width: 100%;
+    }
+    100%{
+        right: 0;
+        width: 0px;
+    }
+}
+
+
+/* <---------------------------------------------> */
+/* <---------------------------------------------> */
+
+
+main{
+    width: 100%;
+    color: red;
+    padding: 0px 20px;
+}
+
+main .booking_counter{
+    height: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:0px 0px 15px rgba(0,0,0,0.15);
+}
+
+
+main .booking_counter .one_way,
+main .booking_counter .round_trip{
+    color: black;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: white;
+    margin-left: 5px;
+    border:1px solid rgb(200,202,208);
+}
+
+.from-and-to{
+    position: relative;
+    margin-top: 10px;
+  
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.from-and-to input{
+    padding: 20px 20px ;
+    font-size: 20px;
+    margin-right:0 ;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(244,245,245);
+    cursor: text;
+
+}
+
+.from-and-to  input:hover{
+    background-color: rgba(201, 215, 215, 0.503);
+    display: flex;
+    flex-direction: row;
+}
+.from-and-to .from,.to{
+    display: inline-block;
+    
+}
+.from-and-to .from{
+    margin-right: 5px;
+}
+.reverse-dest{
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 150px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+
+    left: 247px;
+    border-radius: 150px;
+background: #e0e0e0;
+box-shadow:  9px 9px 25px #b5b5b5,
+             -9px -9px 25px #ffffff;
+}
+
+
+.from-and-to .places{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0px 0px;
+    width: 258px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+.from-and-to .loc{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.207);
+}
+.from-and-to .loc:hover{
+    background-color: rgba(128, 128, 128, 0.251) ;
+    
+}
+.from-and-to .loc .code{
+    background-color: rgba(200, 202, 208, 0.52);
+    padding: 10px;
+    
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+}
+.from-and-to .loc  .name{
+    margin-left: 20px;
+}
+.from-and-to .dates{
+    display: flex;
+    margin-left: 5px;
+    column-gap: 5px;
+}
+.from-and-to .dates .start #start-date,
+.from-and-to .dates #end-date{
+    width: 200px;
+    box-sizing: border-box;
+    height: 64px;
+    border-radius: 0;
+}

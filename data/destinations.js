@@ -1,0 +1,30 @@
+export const destinations=[
+    {
+        name:"New Delhi",
+        code:"DEL"
+    },
+    {
+        name:"Lucknow",
+        code:"LKO"
+    },
+    {
+        name:"Hyderabad",
+        code:"HYD"
+    },
+    {
+        name:"Mumbai",
+        code:"BOM"
+    },
+    {
+        name:"Ahmedabad",
+        code:"DEL"
+    },
+    {
+        name:"Bengaluru",
+        code:"BLR"
+    },
+    {
+        name:"GOA",
+        code:"GOI"
+    }
+]

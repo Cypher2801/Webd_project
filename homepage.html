@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/3e71fea822.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,200;0,300;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/homepage.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Site name</title>
+</head>
+<body>
+    <header>
+        <div class="top_part">
+            <div class="logo">ds </div>
+            <div class="right-header">
+                <div class="offers">
+                    <i class='bx bxs-offer'>  <span>Offers</span></i>
+                </div>
+                <div class="customer-care">
+                    <img src="images/customer_care.png">
+                    <span>Customer Care</span>
+                </div>
+                
+                    <button class="login"><i class='bx bxs-user'></i> Log in/Sign up</button>
+            </div>
+        </div>
+        <div class="options">
+            <div class="option flights">
+                <img src="images/flights.webp" alt="">
+                <span>Flights</span>
+            </div>
+            <div class="option hotels">
+                <img src="images/hotels.avif" alt="">
+                <span>Hotels</span>
+            </div>
+            
+        </div>
+    </header>
+    
+
+    <main>
+        <div class="booking_counter">
+            <button class="one_way">
+                One Way
+            </button>
+            <button class="round_trip">
+                Round Trip
+            </button>
+            <div class="from-and-to">
+                    <div class="from">
+                        <input type="text" id="departure"
+                    placeholder="From"
+                    autocomplete="off">
+                    <div class="places">
+                        
+                    </div>
+                </div>
+                
+                <button class="reverse-dest"><i class="fa-solid fa-arrows-left-right"></i></button>
+                <div class="to">
+                    <input type="text" id="destination"
+                    placeholder="To" autocomplete="off">
+                    <div class="places">
+                        
+                    </div>
+                </div>
+
+                <div class="dates">
+                    <div class="start">
+                        <input type="text" id="start-date"
+                        placeholder="Start-date"
+                        onfocus="this.type='date'"
+                        onblur="this.type='text'">
+                    </div>
+                    <div class="end">
+                        <input type="text" id="end-date"
+                        placeholder="Return-date"
+                        onfocus="this.type='date'"
+                        onblur="this.type='text'">
+                    </div>
+
+                </div>
+
+                <div class="preferences">
+                    <button class="travellers">
+                        <p></p>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <script type="module" src="scripts/homepage.js"></script>
+</body>
+</html>
